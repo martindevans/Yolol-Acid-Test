@@ -1,0 +1,39 @@
+#import lib.yasm
+
+@test1a:
+    x=asin(0)
+
+@test1b:
+    continue_if(x!=0);
+    :OUTPUT="Failed #1 : " + x;
+    gotoinf
+
+@test2a:
+    x=asin(1)
+    
+@test2b:
+    continue_if(x!=90);
+    :OUTPUT="Failed #2 : " + x;
+    gotoinf
+
+@test3a:
+    x=asin(0.5)
+
+@test3b:
+    continue_if(x!=30);
+    :OUTPUT="Failed #3 : " + x;
+    gotoinf
+
+@test4a:
+    x=asin(17)
+
+@test4b:
+    continue_if(x!=-9223372036854775.808);
+    :OUTPUT="Failed #4 : " + x;
+    gotoinf
+
+@aok:
+    :OUTPUT="ok"
+
+@inf:
+    gotoinf

@@ -1,0 +1,39 @@
+#import lib.yasm
+
+@test1a:
+    x=atan(0)
+
+@test1b:
+    continue_if(x!=0);
+    :OUTPUT="Failed #1 : " + x;
+    gotoinf
+
+@test2a:
+    x=atan(1)
+    
+@test2b:
+    continue_if(x!=45);
+    :OUTPUT="Failed #2 : " + x;
+    gotoinf
+
+@test3a:
+    x=atan(0.5)
+
+@test3b:
+    continue_if(x!=26.565);
+    :OUTPUT="Failed #3 : " + x;
+    gotoinf
+
+@test4a:
+    x=atan(998877665544332)
+
+@test4b:
+    continue_if(x!=90);
+    :OUTPUT="Failed #4 : " + x;
+    gotoinf
+
+@aok:
+    :OUTPUT="ok"
+
+@inf:
+    gotoinf

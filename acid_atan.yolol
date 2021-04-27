@@ -1,0 +1,12 @@
+x=atan(0)
+u/=x!=0 :OUTPUT="Failed #1 : " + x goto10
+x=atan(1)
+u/=x!=45 :OUTPUT="Failed #2 : " + x goto10
+x=atan(0.5)
+u/=x!=26.565 :OUTPUT="Failed #3 : " + x goto10
+x=atan(998877665544332)
+u/=x!=90 :OUTPUT="Failed #4 : " + x goto10
+:OUTPUT="ok"
+goto10
+
+// <-------------- this line is 70 characters long ------------------>
