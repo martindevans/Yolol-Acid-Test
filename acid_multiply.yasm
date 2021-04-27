@@ -1,0 +1,39 @@
+#import lib.yasm
+
+@test1a:
+    x=1;
+    i=24 j=38;
+    x*=3 x*=3 x*=3 x*=3 x*=3;
+
+@test1b:
+    continue_if(x!=243);
+    :OUTPUT="Failed #1 : " + x;
+    gotoinf
+
+@test2a:
+    continue_if(i>0);
+    i--;
+    x*=3;
+    gototest2a
+    
+@test2b:
+    continue_if(x!=-5156598929955.207);
+    :OUTPUT="Failed #2 : " + x;
+    gotoinf
+
+@test3a:
+    continue_if(j>0);
+    j--;
+    x*=3;
+    gototest3a
+
+@test3b:
+    continue_if(x!=-113000154446.553);
+    :OUTPUT="Failed #2 : " + x;
+    gotoinf
+
+@aok:
+    :OUTPUT="ok"
+
+@inf:
+    gotoinf

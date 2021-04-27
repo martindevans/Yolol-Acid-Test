@@ -1,0 +1,31 @@
+#import lib.yasm
+
+@test1a:
+    x=tan(0)
+
+@test1b:
+    continue_if(x!=0);
+    :OUTPUT="Failed #1 : " + x;
+    gotoinf
+
+@test2a:
+    x=tan(45)
+    
+@test2b:
+    continue_if(x!=1);
+    :OUTPUT="Failed #2 : " + x;
+    gotoinf
+
+@test3a:
+    x=tan(90)
+
+@test3b:
+    continue_if(x!=-22877332.428);
+    :OUTPUT="Failed #3 : " + x;
+    gotoinf
+
+@aok:
+    :OUTPUT="ok"
+
+@inf:
+    gotoinf

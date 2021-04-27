@@ -1,0 +1,10 @@
+x=tan(0)
+u/=x!=0 :OUTPUT="Failed #1 : " + x goto8
+x=tan(45)
+u/=x!=1 :OUTPUT="Failed #2 : " + x goto8
+x=tan(90)
+u/=x!=-22877332.428 :OUTPUT="Failed #3 : " + x goto8
+:OUTPUT="ok"
+goto8
+
+// <-------------- this line is 70 characters long ------------------>

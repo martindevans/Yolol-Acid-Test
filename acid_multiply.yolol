@@ -1,0 +1,10 @@
+x=1 i=24 j=38 x*=3 x*=3 x*=3 x*=3 x*=3 
+u/=x!=243 :OUTPUT="Failed #1 : " + x goto8
+u/=i>0 i-- x*=3 goto3
+u/=x!=-5156598929955.207 :OUTPUT="Failed #2 : " + x goto8
+u/=j>0 j-- x*=3 goto5
+u/=x!=-113000154446.553 :OUTPUT="Failed #2 : " + x goto8
+:OUTPUT="ok"
+goto8
+
+// <-------------- this line is 70 characters long ------------------>

@@ -1,0 +1,12 @@
+x=acos(0)
+u/=x!=90 :OUTPUT="Failed #1 : " + x goto10
+x=acos(1)
+u/=x!=0 :OUTPUT="Failed #2 : " + x goto10
+x=acos(0.5)
+u/=x!=60 :OUTPUT="Failed #3 : " + x goto10
+x=acos(17)
+u/=x!=-9223372036854775.808 :OUTPUT="Failed #4 : " + x goto10
+:OUTPUT="ok"
+goto10
+
+// <-------------- this line is 70 characters long ------------------>
