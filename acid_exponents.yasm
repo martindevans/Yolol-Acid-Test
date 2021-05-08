@@ -36,7 +36,7 @@
     x=17^17
 
 @test5b:
-    continue_if(x!=-9223372036854776);
+    continue_if(x!=-9223372036854775.808);
     :OUTPUT="Failed #4 : " + x;
     gotoinf
 
