@@ -13,8 +13,8 @@ a=2 x=(5*a-- ) y= 5 if x!=y then goto19 end num++
 a=2 x=(-a++ ) y= -3 if x!=y then goto19 end num++ 
 a=2 x=(-a! ) y= -2  if x!=y then goto19 end num++ 
 a=2 x=(-(a!) ) y= -2 if x!=y then goto19 end num++ 
-num++ a=2 x=((-a)! ) y="error" goto19
-if num != 17 then :OUTPUT="Skipped: "+(17-num)+" tests" goto 20 end
+
+if num != 16 then :OUTPUT="Skipped: "+(16-num)+" tests" goto 20 end
 :OUTPUT="ok" goto20
 :OUTPUT="Failed test #"+num+" got: "+x+" but wanted: "+y
 goto20
