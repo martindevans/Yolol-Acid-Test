@@ -1,0 +1,20 @@
+num=1 x=(sqrt 4! ) y=4.899 if x!=y then goto19 end num++ 
+x=(sqrt (4!) ) y=4.899 if x!=y then goto19 end num++ 
+x=((sqrt 9) ) y=3 if x!=y then goto19 end num++ 
+x=((abs 3) ) y=3 if x!=y then goto19 end num++ 
+a=2+2 x=(a! ) y=24  if x!=y then goto19 end num++ 
+x=(2+3! ) y=8 if x!=y then goto19 end num++ 
+x=(2*3! ) y=12 if x!=y then goto19 end num++ 
+a=-3 x=(a! ) y=-9223372036854775.808 if x!=y then goto19 end num++ 
+a=-3 x=(abs a! ) y=-9223372036854775.808 if x!=y then goto19 end num++ 
+a=-3 x=(abs (a!) ) if x!=y then goto19 end num++ 
+
+
+
+
+
+
+if num != 11 then :OUTPUT="Skipped: "+(11-num)+" tests" goto 20 end
+:OUTPUT="ok" goto20
+:OUTPUT="Failed test #"+num+" got: "+x+" but wanted: "+y
+goto20

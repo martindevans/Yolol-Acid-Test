@@ -1,0 +1,20 @@
+num=1 x=(2*(2>1)*1 ) y= 2 if x!=y then goto19 end num++ 
+x=(2^2>1^1 ) y= 1 if x!=y then goto19 end num++ 
+x=(2+1==1+2 ) y= 5 if x!=y then goto19 end num++ 
+x=(2*1==1*2 ) y= 1 if x!=y then goto19 end num++ 
+x=(0==1>1==1 ) y= 0 if x!=y then goto19 end num++ 
+x=((0==1)>(1==1) ) y= 0 if x!=y then goto19 end num++ 
+x=(0==(1>1)==1 ) y= 1 if x!=y then goto19 end num++ 
+x=((((0==1)>1)==1) ) y= 0 if x!=y then goto19 end num++ 
+x=(0>1==0 ) y= 1 if x!=y then goto19 end num++ 
+x=((0>1)==0 ) y= 1 if x!=y then goto19 end num++ 
+x=(0>(1==0) ) y= 0 if x!=y then goto19 end num++ 
+x=(0==(0 or 1)==1 ) y= 0 if x!=y then goto19 end num++ 
+x=(0==0 or 1==1 ) y= 1 if x!=y then goto19 end num++ 
+x=(1 or 0 == 0 ) y= 1 if x!=y then goto19 end num++ 
+x=((1 or 0) == 0 ) y= 0 if x!=y then goto19 end num++ 
+x=(1 or (0 == 0) ) y= 1 if x!=y then goto19 end num++ 
+if num != 17 then :OUTPUT="Skipped: "+(17-num)+" tests" goto 20 end
+:OUTPUT="ok" goto20
+:OUTPUT="Failed test #"+num+" got: "+x+" but wanted: "+y
+goto20

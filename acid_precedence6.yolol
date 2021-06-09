@@ -1,0 +1,20 @@
+num=1 x=not(not 0) y=0 ifx!=y thengoto19end num++ 
+x=not(not 1) y=1 ifx!=y thengoto19end num++ 
+x=(not 0) and not 0 y=1 ifx!=y thengoto19end num++ 
+x=(not 0) and not 1 y=0 ifx!=y thengoto19end num++ 
+x=1+(not 1) y=1 ifx!=y thengoto19end num++ 
+x=1+(not 0) y=2 ifx!=y thengoto19end num++ 
+x=not 1+1 y=0 ifx!=y thengoto19end num++ 
+x=not 0+1 y=0 ifx!=y thengoto19end num++ 
+x=not 0+0 y=1 ifx!=y thengoto19end num++ 
+
+
+
+
+
+
+
+ifnum!=10then:OUTPUT="Skipped: "+(10-num)+" tests" goto20end
+:OUTPUT="ok" goto20
+:OUTPUT="Failed test #"+num+" got: "+x+" but wanted: "+y
+goto20
