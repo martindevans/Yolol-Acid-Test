@@ -1,5 +1,5 @@
-num=1 x=(sqrt 4! ) y=4.899 if x!=y then goto19 end num++ 
-x=(sqrt (4!) ) y=4.899 if x!=y then goto19 end num++ 
+num=1 x=(sqrt 3! ) y=2.449 if x!=y then goto19 end num++ 
+x=(sqrt (3!) ) y=2.449 if x!=y then goto19 end num++ 
 x=((sqrt 9) ) y=3 if x!=y then goto19 end num++ 
 x=((abs 3) ) y=3 if x!=y then goto19 end num++ 
 a=2+2 x=(a! ) y=24  if x!=y then goto19 end num++ 
