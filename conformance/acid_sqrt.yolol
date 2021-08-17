@@ -14,7 +14,7 @@ x=sqrt 9223372036854774.999 y=96038388.349 n++ goto19/(x!=y)
 
 
 
-if n != 11 then OUTPUT="Skipped: "+(11-n)+" tests" goto 20 end
+if n != 11 then :OUTPUT="Skipped: "+(11-n)+" tests" goto 20 end
 :OUTPUT="ok" goto20
 :OUTPUT="Failed test #"+n+" got: "+x+" but wanted: "+y
 goto20
