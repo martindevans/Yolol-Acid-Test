@@ -1,0 +1,5 @@
+a="字字字字字字字字字字字字字字字字字字字字" //20
+b=a b+=b b+=b b+=b b+=b b+=b b+=b b+=b b+=b // b=7680chars
+c+=b!="" b-- c+=b!="" b-- c+=b!="" b-- c+=b!="" b-- c+=b!="" b-- goto3
+if c==1024 then :OUTPUT="ok" goto4 end
+:OUTPUT="Wrong length! got: "+c+" but wanted: 1024" goto5
