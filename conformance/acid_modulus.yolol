@@ -14,7 +14,7 @@ n++
 
 
 
-if n != 11 then :OUTPUT="Skipped: "+(11-n)+" tests" goto 20 end
+if n != 9 then :OUTPUT="Skipped: "+(9-n)+" tests" goto 20 end
 :OUTPUT="ok" goto20
 :OUTPUT="Failed test #"+n+" got: "+x+" but wanted: "+y
 goto20
