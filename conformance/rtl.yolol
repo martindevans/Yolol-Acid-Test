@@ -1,0 +1,20 @@
+s="hello" s=s-s-- n++ if s!="" then goto 20 end
+s=5 s=s-s-- n++ if s!=0 then goto 20 end
+s=5 s=s+s++ n++ if s!=12 then goto 20 end
+s=5 s=(s--+(2*s++))+s++ n++ if s!=26 then goto 20 end
+s=5 s=((2*s++)+s--)+s++ n++ if s!=23 then goto 20 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+:output="ok" goto 19
+:output="Failed test "+n goto 20
